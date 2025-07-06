@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conto</title>
+</head>
+<body>
+    <img class="morto" src="img/o final.png" alt="?">
+
+    <audio class="melodia" id="music" src="audio/melodia.mp3" hidden></audio>
+    
+    <div class="botoes__musica">
+        <h3>Melodia.mp3</h3>
+        <button onclick="document.getElementById('music').play()">▷ Play</button>
+        <button onclick="document.getElementById('music').pause()">⏸ Pause</button>
+    </div>
+
+    <style>
+        body {
+            height: 100vh;
+            background-color: black;
+            background-image: url(/img/escuro.png);
+            background-size: contain;
+        }
+
+        .morto {
+            height: 100%;
+        }
+
+        .botoes__musica {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            display: inline-block;
+            text-align: center;
+            color: white;
+            background-image: url(img/escuro.png);
+            border: solid;
+            border-radius: 1em;
+            filter:drop-shadow(0px 0px 10px white)
+        }
+
+        button {
+            background-color: black;
+            border: solid;
+            border-color: white;
+            color: white;
+            
+        }
+    
+    </style>
+</body>
+</html>
